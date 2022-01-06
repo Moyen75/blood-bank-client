@@ -1,0 +1,45 @@
+/* top nav bar */
+.top-bar{
+    background-image: linear-gradient(#000000cf,#000000cf);
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+}
+.top-nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.icon{
+    transition: all .3s;
+}
+.top-nav-link:hover .icon{
+    color: tomato;
+    transform: scale(1.6);
+}
+/* main nav bar */
+.main-nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-nav-link{
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: gray;
+    transition: all .3s;
+}
+.main-nav-link:hover{
+    color: tomato;
+}
+.last{
+    background-color: tomato;
+    color: white;
+    padding: 6px;
+    transition: all .3s;
+}
+.last:hover{
+    background-color: white;
+}
