@@ -43,3 +43,9 @@
 .last:hover{
     background-color: white;
 }
+/* top banner */
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
