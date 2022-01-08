@@ -12,7 +12,6 @@ const Home = () => {
             <Box sx={{ paddingX: { xs: '10px', md: '150px' } }}>
                 <MainNavBar></MainNavBar>
                 <TopBanner></TopBanner>
-                <Footer></Footer>
             </Box>
             <Footer></Footer>
         </div>

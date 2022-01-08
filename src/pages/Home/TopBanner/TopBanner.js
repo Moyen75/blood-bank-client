@@ -34,6 +34,9 @@ export const TopBanner = () => {
                             <Button
                                 sx={{ color: "white", backgroundColor: 'tomato', transition: 'all .3s', '&:hover': { color: 'tomato', backgroundColor: 'white', border: '1px solid tomato', boxShadow: 'none' } }}
                                 variant='contained'>JOIN US</Button>
+                            <Button
+                                sx={{ marginLeft: '15px', color: "tomato", backgroundColor: 'white', border: '1px solid tomato', boxShadow: 'none', transition: 'all .3s', '&:hover': { color: "white", backgroundColor: 'tomato' } }}
+                                variant='contained'>CONTACT NOW</Button>
                         </Box>
                     </Box>
 
