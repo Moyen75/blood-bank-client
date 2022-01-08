@@ -1,5 +1,7 @@
 import { Box } from '@mui/system';
 import React from 'react';
+import BloodGroups from '../BloodGroups/BloodGroups';
+import DonationProcess from '../DonationProcess/DonationProcess';
 import Footer from '../Footer/Footer';
 import MainNavBar from '../MainNavBar/MainNavBar';
 import { TopBanner } from '../TopBanner/TopBanner';
@@ -12,6 +14,8 @@ const Home = () => {
             <Box sx={{ paddingX: { xs: '10px', md: '150px' } }}>
                 <MainNavBar></MainNavBar>
                 <TopBanner></TopBanner>
+                <DonationProcess></DonationProcess>
+                <BloodGroups />
             </Box>
             <Footer></Footer>
         </div>

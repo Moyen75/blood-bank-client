@@ -118,7 +118,7 @@ export const TopBanner = () => {
                     </Grid>
                 </Grid>
             </Box>
-            <Box sx={{ padding: { xs: '30px 0', md: '30px' }, backgroundColor: '#F2F2F6 ', marginBottom: '40px', marginTop: { xs: '-20px', md: '0' }, zIndex: '999', borderRadius: '5px' }}>
+            <Box sx={{ padding: { xs: '30px 0', md: '30px' }, backgroundColor: '#EDEDEE', marginBottom: '40px', marginTop: { xs: '-20px', md: '0' }, zIndex: '999', borderRadius: '5px' }}>
                 <form action="">
                     <TextField
                         id="outlined-select-currency"
