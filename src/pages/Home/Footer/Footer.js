@@ -1,10 +1,11 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>footer</h1>
-        </div>
+        <Box sx={{ paddingX: { xs: '10px', md: '150px' } }}>
+
+        </Box>
     );
 };
 

@@ -14,6 +14,7 @@ const Home = () => {
                 <TopBanner></TopBanner>
                 <Footer></Footer>
             </Box>
+            <Footer></Footer>
         </div>
     );
 };

@@ -20,18 +20,20 @@ export const TopBanner = () => {
                             backgroundPosition: 'left',
                             backgroundRepeat: 'no-repeat', md: 'url()'
                         }, minHeight: { xs: '430px', md: 'auto' },
-                        display:'flex',alignItems:'center'
-                        
+                        display: 'flex', alignItems: 'center'
+
                     }}>
-                        <Box sx={{textAlign:{xs:'left',md:'center'},maxWidth:{xs:'240px',md:'100%'},color:'gray'}}>
-                            <Typography variant='h5' sx={{textAlign:'left',color:'tomato'}}>
+                        <Box sx={{ textAlign: { xs: 'left', md: 'center' }, maxWidth: { xs: '240px', md: '100%' }, color: 'gray' }}>
+                            <Typography variant='h5' sx={{ textAlign: 'left', color: 'tomato' }}>
                                 DONATE BLOOD AND GET REAL BLESSINGS.
                             </Typography>
-                            <Typography sx={{textAlign:'left'}}>
+                            <Typography sx={{ textAlign: 'left' }}>
                                 Blood is the most precious gift that anyone can give to another person.
                                 Donating blood not only saves the life also save donor's lives.
                             </Typography>
-                            <Button variant='contained'>DONATE NOW</Button>
+                            <Button
+                                sx={{ color: "white", backgroundColor: 'tomato', transition: 'all .3s', '&:hover': { color: 'tomato', backgroundColor: 'white', border: '1px solid tomato', boxShadow: 'none' } }}
+                                variant='contained'>JOIN US</Button>
                         </Box>
                     </Box>
 
