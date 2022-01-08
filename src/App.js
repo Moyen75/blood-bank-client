@@ -5,7 +5,7 @@ import Home from './pages/Home/Home/Home';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}></Route>
