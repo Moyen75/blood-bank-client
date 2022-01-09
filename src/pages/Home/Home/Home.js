@@ -1,11 +1,14 @@
 import { Box } from '@mui/system';
 import React from 'react';
 import BloodGroups from '../BloodGroups/BloodGroups';
+import DonateBenefits from '../DonateBenefits/DonateBenefits';
 import DonationProcess from '../DonationProcess/DonationProcess';
 import Footer from '../Footer/Footer';
 import MainNavBar from '../MainNavBar/MainNavBar';
+import RecentDonors from '../RecentDonors/RecentDonors';
 import { TopBanner } from '../TopBanner/TopBanner';
 import TopBar from '../TopBar/TopBar';
+import Volunteers from '../Volunteers/Volunteers';
 
 const Home = () => {
     return (
@@ -16,6 +19,9 @@ const Home = () => {
                 <TopBanner></TopBanner>
                 <DonationProcess></DonationProcess>
                 <BloodGroups />
+                <RecentDonors />
+                <DonateBenefits />
+                <Volunteers />
             </Box>
             <Footer></Footer>
         </div>

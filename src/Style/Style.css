@@ -67,6 +67,7 @@
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
+    color: #052D65;
 }
 .blood::after{
     content: '';
@@ -101,4 +102,20 @@
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
+}
+/* donation benefits */
+.list li{
+    position: relative;
+    color: gray;
+}
+.list li::before{
+    position: absolute;
+    content: '';
+    top: 6px;
+    height: 10px;
+    width: 10px;
+    background-color: #F5035B;
+    border-radius: 50%;
+    left: -15px;
+
 }
