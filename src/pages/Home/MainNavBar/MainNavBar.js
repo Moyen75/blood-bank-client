@@ -16,14 +16,14 @@ const MainNavBar = () => {
             </Box>
             <Box className='main-nav-links'>
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                    <Link className='main-nav-link' to='home'>Home</Link>
-                    <Link className='main-nav-link' to='about'>About</Link>
-                    <Link className='main-nav-link' to='volunteer'>Volunteer</Link>
-                    <Link className='main-nav-link' to='donors'>Donors</Link>
-                    <Link className='main-nav-link' to='blog'>Blog</Link>
-                    <Link className='main-nav-link' to='contact'>Contact</Link>
+                    <Link className='main-nav-link' to='/home'>Home</Link>
+                    <Link className='main-nav-link' to='/about'>About</Link>
+                    <Link className='main-nav-link' to='/volunteer'>Volunteer</Link>
+                    <Link className='main-nav-link' to='/donors'>Donors</Link>
+                    <Link className='main-nav-link' to='/blog'>Blog</Link>
+                    <Link className='main-nav-link' to='/contact'>Contact</Link>
                 </Box>
-                <Link className='main-nav-link last' to='donateBlood'> Join as Donor</Link>
+                <Link className='main-nav-link last' to='/joinAsDonor'> Join as Donor</Link>
             </Box>
         </Box>
     );

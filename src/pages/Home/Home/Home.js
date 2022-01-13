@@ -5,6 +5,7 @@ import DonateBenefits from '../DonateBenefits/DonateBenefits';
 import DonationProcess from '../DonationProcess/DonationProcess';
 import Footer from '../Footer/Footer';
 import MainNavBar from '../MainNavBar/MainNavBar';
+import News from '../News/News';
 import RecentDonors from '../RecentDonors/RecentDonors';
 import Review from '../Review/Review';
 import Testimonial from '../Testimonial/Testimonial';
@@ -15,7 +16,6 @@ import Volunteers from '../Volunteers/Volunteers';
 const Home = () => {
     return (
         <div>
-            <TopBar></TopBar>
             <Box sx={{ paddingX: { xs: '10px', md: '150px' } }}>
                 <MainNavBar></MainNavBar>
                 <TopBanner></TopBanner>
@@ -28,8 +28,8 @@ const Home = () => {
             <Testimonial />
             <Box sx={{ paddingX: { xs: '10px', md: '150px' } }}>
                 <Review />
+                <News/>
             </Box>
-            <Footer></Footer>
         </div>
     );
 };

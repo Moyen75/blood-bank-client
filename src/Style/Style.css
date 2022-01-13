@@ -117,5 +117,27 @@
     background-color: #F5035B;
     border-radius: 50%;
     left: -15px;
-
+}
+/* login and register */
+.login{
+    background-image:url('../images/login-6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: #F5035B;
+}
+.form-input{
+    width: 75%;
+    background-color: #F5035B;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.form-input:hover{
+    cursor: pointer;
 }

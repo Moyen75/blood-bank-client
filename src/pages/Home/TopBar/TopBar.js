@@ -2,15 +2,17 @@ import { Button, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../../firebase/useFirebase';
 import '../../../Style/Style.css'
 
 const TopBar = () => {
+    const { user, logOut } = useFirebase()
     return (
         <Box className='top-bar'>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', paddingX: {xs:'30px',md:'150px'}, alignItems: 'center' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', paddingX: { xs: '30px', md: '150px' }, alignItems: 'center' }}>
                 <Box>
                     <Typography>
-                    <i class="fas fa-phone"></i>  +8801308989743
+                        <i class="fas fa-phone"></i>  +8801308989743
                     </Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -20,14 +22,18 @@ const TopBar = () => {
                         <Link className='top-nav-link' to='/'><i class="fab fa-twitter icon"></i></Link>
                         <Link className='top-nav-link' to='/'><i class="fab fa-youtube icon"></i></Link>
                     </Box>
-                    <Button variant='contained' sx={{
+                    {user.email ? <Box>
+                        <Button onClick={logOut}>
+                            log out
+                        </Button>
+                    </Box> : <Button variant='contained' sx={{
                         backgroundColor: 'tomato', textTransform: 'lowercase', transition: 'all .8s', '&:hover': {
                             background: "#fff",
                             color: 'tomato'
                         },
                     }}>
                         Login
-                    </Button>
+                    </Button>}
                 </Box>
             </Box>
         </Box>
