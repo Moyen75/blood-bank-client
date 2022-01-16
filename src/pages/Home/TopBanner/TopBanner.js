@@ -64,15 +64,27 @@ const BloodGroups = [
 ];
 
 export const TopBanner = () => {
-    const [currency, setCurrency] = React.useState('Dhanghara');
+    const [area, setArea] = React.useState('Dhanghara');
     const [blood, setBlood] = React.useState('A+');
 
+    const [searchedData, setSearchedData] = React.useState([])
+
     const handleChange = (event) => {
-        setCurrency(event.target.value);
+        setArea(event.target.value);
     };
     const handleChangeBlood = (event) => {
         setBlood(event.target.value);
     };
+
+    const handleSearch = e => {
+        e.preventDefault()
+        console.log('this is', area, blood)
+        fetch(`http://localhost:5000/donors?area=${area}&blood=${blood}`)
+            .then(res => res.json())
+            .then(data => setSearchedData(data))
+    }
+
+
     return (
         <Box>
             <Box>
@@ -113,13 +125,13 @@ export const TopBanner = () => {
                 </Grid>
             </Box>
             <Box sx={{ padding: { xs: '30px 0', md: '30px' }, backgroundColor: '#EDEDEE', marginBottom: '40px', marginTop: { xs: '-20px', md: '0' }, zIndex: '999', borderRadius: '5px' }}>
-                <form action="">
+                <form onSubmit={handleSearch}>
                     <TextField
                         id="outlined-select-currency"
                         select
                         label="Area"
-                        sx={{ width: {xs:'25%',md:'35%'}, marginX: '5px' }}
-                        value={currency}
+                        sx={{ width: { xs: '25%', md: '35%' }, marginX: '5px' }}
+                        value={area}
                         onChange={handleChange}
                     >
                         {currencies.map((option) => (
@@ -132,7 +144,7 @@ export const TopBanner = () => {
                         id="outlined-select-currency"
                         select
                         label="Blood Group"
-                        sx={{ width: {xs:'25%',md:'35%'}, marginX: '5px' }}
+                        sx={{ width: { xs: '25%', md: '35%' }, marginX: '5px' }}
                         value={blood}
                         onChange={handleChangeBlood}
                     >

@@ -69,8 +69,7 @@ const JoinDonor = () => {
     const [data, setData] = useState(userData)
 
     const isAuth = localStorage.getItem('isLoggedIn')
-    console.log('This is isAuth', isAuth)
-    console.log('Hello from join ')
+
     const handleSignInData = (e) => {
         const field = e.target.name;
         const value = e.target.value;
@@ -80,7 +79,19 @@ const JoinDonor = () => {
     }
     const handleOnSubmit = e => {
         e.preventDefault()
-        console.log(data)
+        fetch('http://localhost:5000/donors', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert('Thank you for joining as a donor')
+                }
+            })
     }
     console.log(data)
     return (
@@ -122,7 +133,7 @@ const JoinDonor = () => {
                         <TextField
                             id='outline-basic'
                             label='Date Of Birth'
-                            name='number'
+                            name='birthDate'
                             onChange={handleSignInData}
                             sx={{ width: '75%', marginBottom: '15px' }}
                             variant='outlined'
