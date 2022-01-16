@@ -43,10 +43,10 @@ const Volunteers = () => {
             <Grid container spacing={2}>
                 {
                     volunteers.map(donor => <Grid item xs={12} md={3}>
-                        <Box sx={{ borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',backgroundColor:'#EDEDEE' }}>
+                        <Box sx={{ borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', backgroundColor: '#EDEDEE' }}>
                             <Box sx={{ paddingTop: '20px', position: 'relative' }}>
-                                <img style={{ width: '130px', height: '130px', borderRadius: '50%', border: '2px solid #F5035B', objectFit: 'cover' ,zIndex:-999}} src={donor.img} alt="" />
-                                <span style={{ position: 'absolute', border: '2px solid #F5035B', borderRadius: '50%', width: '40px', height: '40px', lineHeight: '40px',right:'30px',zIndex:999,backgroundColor:'#E6E4EA ',color:'#F5035B' }}>
+                                <img style={{ width: '130px', height: '130px', borderRadius: '50%', border: '2px solid #F5035B', objectFit: 'cover', zIndex: -999 }} src={donor.img} alt="" />
+                                <span style={{ position: 'absolute', border: '2px solid #F5035B', borderRadius: '50%', width: '40px', height: '40px', lineHeight: '40px', right: '30px', zIndex: 999, backgroundColor: '#E6E4EA ', color: '#F5035B' }}>
                                     {donor.blood}
                                 </span>
                             </Box>
@@ -59,10 +59,10 @@ const Volunteers = () => {
                                     <span style={{ color: 'red' }}>{donor.title}</span>
                                 </Typography>
                                 <Box>
-                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i class="fab fa-facebook icon"></i></Link>
-                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i class="fab fa-instagram icon"></i></Link>
-                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i class="fab fa-twitter icon"></i></Link>
-                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i class="fab fa-youtube icon"></i></Link>
+                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i className="fab fa-facebook icon"></i></Link>
+                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i className="fab fa-instagram icon"></i></Link>
+                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i className="fab fa-twitter icon"></i></Link>
+                                    <Link style={{ color: 'gray' }} className='top-nav-link' to='/'><i className="fab fa-youtube icon"></i></Link>
                                 </Box>
                             </Box>
                         </Box>

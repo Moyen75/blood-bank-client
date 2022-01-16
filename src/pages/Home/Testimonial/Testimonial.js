@@ -11,7 +11,7 @@ const Testimonial = () => {
             <Grid container spacing={2}>
                 <Grid item xs={12} md={3} data-aos="fade-up">
                     <Box sx={{ color: 'white' }}>
-                        <span style={{ fontSize: '40px' }}><i class="fas fa-address-book"></i></span>
+                        <span style={{ fontSize: '40px' }}><i className="fas fa-address-book"></i></span>
                         <h2 style={{ fontSize: '40px', margin: '0' }}><CountUp start={0} duration={2} end={100} redraw={true}>
                             {({ countUpRef, start }) => (
                                 <VisibilitySensor onChange={start} delayedCall>
@@ -24,7 +24,7 @@ const Testimonial = () => {
                 </Grid>
                 <Grid item xs={12} md={3}>
                     <Box sx={{ color: 'white' }}>
-                        <span style={{ fontSize: '40px' }}><i class="fas fa-tint"></i></span>
+                        <span style={{ fontSize: '40px' }}><i className="fas fa-tint"></i></span>
                         <h2 style={{ fontSize: '40px', margin: '0' }}><CountUp start={0} duration={2} end={8} redraw={true}>
                             {({ countUpRef, start }) => (
                                 <VisibilitySensor onChange={start} delayedCall>
@@ -37,7 +37,7 @@ const Testimonial = () => {
                 </Grid>
                 <Grid item xs={12} md={3}>
                     <Box sx={{ color: 'white' }}>
-                        <span style={{ fontSize: '40px' }}><i class="far fa-laugh"></i></span>
+                        <span style={{ fontSize: '40px' }}><i className="far fa-laugh"></i></span>
                         <h2 style={{ fontSize: '40px', margin: '0' }}><CountUp start={0} duration={2} end={80} redraw={true}>
                             {({ countUpRef, start }) => (
                                 <VisibilitySensor onChange={start} delayedCall>
@@ -50,7 +50,7 @@ const Testimonial = () => {
                 </Grid>
                 <Grid item xs={12} md={3}>
                     <Box sx={{ color: 'white' }}>
-                        <span style={{ fontSize: '40px' }}><i class="fas fa-trophy"></i></span>
+                        <span style={{ fontSize: '40px' }}><i className="fas fa-trophy"></i></span>
                         <h2 style={{ fontSize: '40px', margin: '0' }}><CountUp start={0} duration={2} end={6} redraw={true}>
                             {({ countUpRef, start }) => (
                                 <VisibilitySensor onChange={start} delayedCall>

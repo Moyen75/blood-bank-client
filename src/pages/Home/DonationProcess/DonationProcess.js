@@ -25,10 +25,10 @@ const DonationProcess = () => {
                                 Registation
                             </Typography>
                             <Typography sx={{ display: { xs: 'none', md: 'block' } }}>
-                                <i class="fas fa-arrow-right"></i>
+                                <i className="fas fa-arrow-right"></i>
                             </Typography>
                             <Typography sx={{ display: { xs: 'block', md: 'none' } }}>
-                                <i class="fas fa-arrow-down"></i>                            </Typography>
+                                <i className="fas fa-arrow-down"></i>                            </Typography>
                         </Box>
                     </Box>
                 </Grid>
@@ -47,10 +47,10 @@ const DonationProcess = () => {
                                 Screening
                             </Typography>
                             <Typography sx={{ display: { xs: 'none', md: 'block' } }}>
-                                <i class="fas fa-arrow-right"></i>
+                                <i className="fas fa-arrow-right"></i>
                             </Typography>
                             <Typography sx={{ display: { xs: 'block', md: 'none' } }}>
-                                <i class="fas fa-arrow-down"></i>                            </Typography>
+                                <i className="fas fa-arrow-down"></i>                            </Typography>
                         </Box>
                     </Box>
                 </Grid>
@@ -69,10 +69,10 @@ const DonationProcess = () => {
                                 Donation
                             </Typography>
                             <Typography sx={{ display: { xs: 'none', md: 'block' } }}>
-                                <i class="fas fa-arrow-right"></i>
+                                <i className="fas fa-arrow-right"></i>
                             </Typography>
                             <Typography sx={{ display: { xs: 'block', md: 'none' } }}>
-                                <i class="fas fa-arrow-down"></i>                            </Typography>
+                                <i className="fas fa-arrow-down"></i>                            </Typography>
                         </Box>
                     </Box>
                 </Grid>
@@ -91,10 +91,10 @@ const DonationProcess = () => {
                                 Rest & Refresh
                             </Typography>
                             <Typography sx={{ display: { xs: 'none', md: 'block' } }}>
-                                <i class="fas fa-arrow-right"></i>
+                                <i className="fas fa-arrow-right"></i>
                             </Typography>
                             <Typography sx={{ display: { xs: 'block', md: 'none' } }}>
-                                <i class="fas fa-arrow-down"></i>                            </Typography>
+                                <i className="fas fa-arrow-down"></i>                            </Typography>
                         </Box>
                     </Box>
                 </Grid>

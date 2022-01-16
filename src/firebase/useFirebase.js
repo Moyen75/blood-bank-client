@@ -10,7 +10,7 @@ const useFirebase = () => {
 
     const auth = getAuth()
     // google sign in
-    const googleSignIn = ( navigate, location) => {
+    const googleSignIn = (navigate, location) => {
         setLoading(true)
         const provider = new GoogleAuthProvider()
         let from = location?.state?.from?.pathname || "/";
@@ -25,7 +25,7 @@ const useFirebase = () => {
             .finally(() => setLoading(false))
     }
     // facebook log in
-    const facebookSignIn = ( navigate, location) => {
+    const facebookSignIn = (navigate, location) => {
         setLoading(true)
         const facebookProvider = new FacebookAuthProvider()
         let from = location?.state?.from?.pathname || "/";
@@ -39,8 +39,16 @@ const useFirebase = () => {
             })
             .finally(() => setLoading(false))
     }
+    const setToLocalStorage = () => {
+        const loggedIn = 'loggedIn';
+        localStorage.setItem('isLoggedIn', loggedIn)
+    }
+    const removeFromLocalStorage = () => {
+        const loggedIn = 'loggedOut';
+        localStorage.setItem('isLoggedIn', loggedIn)
+    }
     // create user with email and password
-    const createUser = (email, password, name,  navigate, fail) => {
+    const createUser = (email, password, name, navigate, fail) => {
         setLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
@@ -73,6 +81,7 @@ const useFirebase = () => {
         const unsubscribe = onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user)
+                setToLocalStorage()
                 setLoading(false)
             }
             else {
@@ -88,6 +97,7 @@ const useFirebase = () => {
         setLoading(true)
         signOut(auth)
             .then(() => {
+                removeFromLocalStorage()
                 // Sign-out successful.
             }).catch((error) => {
                 setError(error.message)

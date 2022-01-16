@@ -9,11 +9,11 @@ const Footer = () => {
             <Box sx={{ paddingX: { xs: '30px', md: '150px' }, backgroundColor: 'rgb(5, 5, 69)', color: 'white', marginTop: '20px' }}>
                 <Grid container spacing={2} sx={{ paddingTop: '10px' }}>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{ display: 'flex'}}>
+                        <Box sx={{ display: 'flex' }}>
                             <Box sx={{ padding: "2px 10px", color: 'tomato' }}>
-                                <i class="fas fa-envelope"></i>
+                                <i className="fas fa-envelope"></i>
                             </Box>
-                            <Box sx={{textAlign:'left'}}>
+                            <Box sx={{ textAlign: 'left' }}>
                                 <Typography variant='h6'>
                                     Email Address
                                 </Typography>
@@ -24,11 +24,11 @@ const Footer = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{ display: 'flex'}}>
+                        <Box sx={{ display: 'flex' }}>
                             <Box sx={{ padding: "2px 10px", color: 'tomato' }}>
-                                <i class="fas fa-phone"></i>
+                                <i className="fas fa-phone"></i>
                             </Box>
-                            <Box sx={{textAlign:'left'}}>
+                            <Box sx={{ textAlign: 'left' }}>
                                 <Typography variant='h6'>
                                     Emergency Calling
                                 </Typography>
@@ -46,10 +46,10 @@ const Footer = () => {
                                     Let's connect
                                 </Typography>
                                 <Typography className='connects'>
-                                    <Link to='/'><i class="fab fa-facebook"></i></Link>
-                                    <Link to='/'><i class="fab fa-instagram"></i></Link>
-                                    <Link to='/'><i class="fab fa-twitter"></i></Link>
-                                    <Link to='/'><i class="fab fa-youtube"></i></Link>
+                                    <Link to='/'><i className="fab fa-facebook"></i></Link>
+                                    <Link to='/'><i className="fab fa-instagram"></i></Link>
+                                    <Link to='/'><i className="fab fa-twitter"></i></Link>
+                                    <Link to='/'><i className="fab fa-youtube"></i></Link>
                                 </Typography>
                             </Box>
                         </Box>
@@ -59,7 +59,7 @@ const Footer = () => {
                     <Grid item xs={12} md={3}>
                         <Box>
 
-                            <Box sx={{textAlign:'left'}}>
+                            <Box sx={{ textAlign: 'left' }}>
                                 <img style={{ width: '40px', height: '40px', marginX: 'auto' }} src={img} alt="" />
                                 <Typography sx={{ color: 'gray' }}>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus expedita autem incidunt necessitatibus aut unde atque.
@@ -69,7 +69,7 @@ const Footer = () => {
                     </Grid>
                     <Grid item xs={12} md={3}>
                         <Box>
-                            <Box sx={{textAlign:'left'}}>
+                            <Box sx={{ textAlign: 'left' }}>
                                 <Typography variant='h6'>
                                     USEFUL LINKS
                                 </Typography>
@@ -85,7 +85,7 @@ const Footer = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={3} sx={{textAlign:'left'}}>
+                    <Grid item xs={12} md={3} sx={{ textAlign: 'left' }}>
                         <Typography variant='h6'>
                             Recent Posts
                         </Typography>
@@ -112,7 +112,7 @@ const Footer = () => {
                     </Grid>
                     <Grid item xs={12} md={3}>
                         <Box>
-                            <Box sx={{textAlign:'left'}}>
+                            <Box sx={{ textAlign: 'left' }}>
                                 <Typography variant='h6'>
                                     Important Links
                                 </Typography>

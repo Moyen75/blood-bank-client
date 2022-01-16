@@ -65,8 +65,12 @@ const JoinDonor = () => {
     const { user } = useAuth()
     const area = 'Dhanghara';
     const blood = 'A+';
-    const [data, setData] = useState({ blood, area })
+    const userData = { blood, area, name: user.displayName, email: user.email }
+    const [data, setData] = useState(userData)
 
+    const isAuth = localStorage.getItem('isLoggedIn')
+    console.log('This is isAuth', isAuth)
+    console.log('Hello from join ')
     const handleSignInData = (e) => {
         const field = e.target.name;
         const value = e.target.value;
@@ -85,7 +89,7 @@ const JoinDonor = () => {
                 <img style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }} src={img} alt="" />
             </Box>
             <Box sx={{ backgroundColor: 'skyBlue ', padding: '50px 0' }}>
-                <Box sx={{ maxWidth: '395px', marginX: 'auto', marginTop: '10px', backgroundColor: '#EDEDEE', paddingY: '15px', borderRadius: '5px', boxShadow: ' rgba(0, 0, 0, 0.35) 0px 5px 15px',marginY:'0' }}>
+                <Box sx={{ maxWidth: '395px', marginX: 'auto', marginTop: '10px', backgroundColor: '#EDEDEE', paddingY: '15px', borderRadius: '5px', boxShadow: ' rgba(0, 0, 0, 0.35) 0px 5px 15px', marginY: '0' }}>
                     <h2 className='blood' >Join As Donor</h2>
                     <form onSubmit={handleOnSubmit}>
                         <TextField

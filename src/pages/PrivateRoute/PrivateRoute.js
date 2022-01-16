@@ -7,11 +7,13 @@ import { Navigate } from 'react-router-dom'
 const PrivateRoute = ({ children }) => {
     const { user, loading } = useAuth()
     let location = useLocation();
-    if (loading) {
-        return <CircularProgress />
-    }
-    if (user.email) {
-        return children
+    const isAuth = localStorage.getItem('isLoggedIn')
+    if (isAuth ==='loggedIn') {
+        if (user.email) {
+            return children;
+        } else if (loading) {
+            return <CircularProgress />
+        }
     }
     return <Navigate to="/login" state={{ from: location }} replace />;
 }
