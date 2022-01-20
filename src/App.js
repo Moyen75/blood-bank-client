@@ -9,6 +9,7 @@ import Register from './pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import JoinDonor from './pages/JoinDonor/JoinDonor';
+import { Bloods } from './pages/Bloods/Bloods';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='/' element={<Home />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/register' element={<Register />}></Route>
+            <Route path='/bloods/:group' element={<Bloods />}></Route>
             <Route path='/joinAsDonor' element={<PrivateRoute><JoinDonor /></PrivateRoute>}></Route>
           </Routes>
           <Footer />

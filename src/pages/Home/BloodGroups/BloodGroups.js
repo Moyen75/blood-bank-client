@@ -15,7 +15,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '30px', margin: '0 auto', padding: '8px 10px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             A+
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/A+'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -23,7 +23,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '30px', margin: '0 auto', padding: '8px 10px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             A-
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/A-'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -31,7 +31,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '45px', margin: '0 auto', padding: '8px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             AB+
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/AB+'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -39,7 +39,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '40px', margin: '0 auto', padding: '8px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             AB-
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/AB-'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -47,7 +47,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '30px', margin: '0 auto', padding: '8px 10px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             B+
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/B+'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -55,7 +55,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '30px', margin: '0 auto', padding: '8px 10px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             B-
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/B-'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -63,7 +63,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '30px', margin: '0 auto', padding: '8px 10px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             O+
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/O+'>view all</Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -71,7 +71,7 @@ const BloodGroups = () => {
                         <Typography sx={{ backgroundColor: '#ff347d33', width: '30px', margin: '0 auto', padding: '8px 10px', borderRadius: '5px', color: 'red',marginY:'10px' }} variant='h5'>
                             O-
                         </Typography>
-                        <Link className='link' to='/'>view all</Link>
+                        <Link className='link' to='/bloods/O-'>view all</Link>
                     </Box>
                 </Grid>
             </Grid>
